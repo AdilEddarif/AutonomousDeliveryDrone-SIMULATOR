@@ -42,7 +42,9 @@ In another Terminal launch the apm.launch file
 roslaunch iq_gnc apm.launch
 ``` 
 In a final Terminal run the pyhton script and set the mode to guided in the sitl terminal
+```
 roslaunch iq_gnc travel.py
+```
 mode GUIDED typed in the second terminal where the software in the loop is running
 
 
