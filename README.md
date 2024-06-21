@@ -31,7 +31,11 @@ roslaunch iq_sim runway.launch
 ``` 
 Launch the ardupilot instance by running 
 ```
-cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console "or"  ./startsitl.sh
+cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console 
+```
+or
+```
+  ./startsitl.sh
 ``` 
 In another Terminal launch the apm.launch file 
 ```
