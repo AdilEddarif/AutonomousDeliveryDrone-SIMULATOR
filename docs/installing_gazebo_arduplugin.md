@@ -24,7 +24,7 @@ sudo apt update
 
 Install Gazebo:
 
-```
+
 ### Ubuntu [***20.04+***]
 ```
 sudo apt-get install gazebo11 libgazebo11-dev
