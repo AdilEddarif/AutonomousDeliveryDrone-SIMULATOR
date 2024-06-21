@@ -3,9 +3,9 @@
 
 Take a look at these tutorials to setup ardupilot, gazebo and the ardupilot gazebo plugin 
 
-[Installing Ardupilot and MAVProxy](https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/Installing_Ardupilot.md)
+[Installing Ardupilot and MAVProxy](https://github.com/AdilEddarif/AutonomousDeliveryDrone-SIMULATOR/blob/main/docs/Installing_Ardupilot_20_04.md)
 
-[Installing Gazebo and ArduPilot Plugin](https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/installing_gazebo_arduplugin.md)
+[Installing Gazebo and ArduPilot Plugin](https://github.com/AdilEddarif/AutonomousDeliveryDrone-SIMULATOR/blob/main/docs/installing_gazebo_arduplugin.md)
 
 Installing x-term is recommended as it allows the ardupilot sitl interface to run in a terminal that will cleanly close when closing you sitl instance
 ```
@@ -31,7 +31,15 @@ roslaunch iq_sim runway.launch
 ``` 
 Launch the ardupilot instance by running 
 ```
-cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console
+cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console "or"  ./startsitl.sh
 ``` 
+In another Terminal launch the apm.launch file 
+```
+roslaunch iq_gnc apm.launch
+``` 
+In a final Terminal run the pyhton script and set the mode to guided in the sitl terminal
+roslaunch iq_gnc travel.py
+mode GUIDED typed in the second terminal where the software in the loop is running
+
 
 

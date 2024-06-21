@@ -23,11 +23,9 @@ sudo apt update
 ```
 
 Install Gazebo:
-### Ubuntu [***18.04***]
+
 ```
-sudo apt install gazebo9 libgazebo9-dev
-```
-### Ubuntu [***20.04***]
+### Ubuntu [***20.04+***]
 ```
 sudo apt-get install gazebo11 libgazebo11-dev
 ```
@@ -40,10 +38,6 @@ for more detailed instructions for installing gazebo checkout http://gazebosim.o
 cd ~
 git clone https://github.com/khancyr/ardupilot_gazebo.git
 cd ardupilot_gazebo
-```
-***Ubuntu 18.04 only*** checkout dev
-```
-git checkout dev
 ```
 build and install plugin
 ```
