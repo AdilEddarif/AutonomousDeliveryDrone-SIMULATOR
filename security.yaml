@@ -1,0 +1,5 @@
+enable_security: true
+
+tls:
+  cert_chain_file: /home/rima/IARV/projects/Autonomous-Drone-Delivery-System/src/security_py/certificate_chain.pem
+  private_key_file: /home/rima/IARV/projects/Autonomous-Drone-Delivery-System/src/security_py/private_key.pem
