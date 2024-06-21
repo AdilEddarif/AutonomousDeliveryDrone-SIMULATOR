@@ -1,0 +1,23 @@
+In the context of an Autonomous Drone Delivery System, security is a critical aspect that needs to be addressed to ensure the safe and reliable operation of the drones, as well as the protection of sensitive data. 
+Security principles are typically based on the CIA triad: Confidentiality, Integrity, and Availability. 
+
+Man-in-the-Middle Attack Model
+In a MITM attack scenario, an attacker could position themselves between the drone and the ground station, intercepting and potentially modifying the exchanged messages.
+A man-in-the-middle attack directly violates the confidentiality and integrity principles. By intercepting the communication, an attacker can breach confidentiality by gaining unauthorized access to sensitive information. Additionally, the ability to modify or tamper with the exchanged data compromises the integrity of the communication.
+TLS Encryption Solution
+TLS encryption is a widely adopted and robust security standard that provides several key benefits for securing communication in our Autonomous Drone Delivery System:
+Strong Encryption: TLS utilizes powerful encryption algorithms, such as AES and RSA, to encrypt the data exchanged between the drone and the ground station, ensuring that any intercepted communication remains confidential and unreadable to unauthorized parties.
+Authentication: TLS supports mutual authentication, allowing both the drone and the ground station to verify each other's identities using digital certificates. This prevents man-in-the-middle attacks and ensures that communication is established with legitimate and trusted entities.
+Data Integrity: TLS ensures data integrity by using cryptographic hash functions to detect any unauthorized modifications or tampering of the data during transmission. This safeguards against data manipulation attempts and ensures the reliability of the received information.
+Testing and Validation:
+Publisher-Subscriber Model: testing initially the TLS implementation on a ROS publisher-subscriber project to validate its effectiveness.
+Generate a Keystore
+The keystore will contain the keys and certificates required to enable security for all participants in the ROS 2 graph.
+Generate Keys and Certificates
+Generation of keys and certificates for each node that will have security enabled. For our project, this includes the talker and listener nodes.
+Configure Environment Variables
+Setting the necessary environment variables to allow the middleware to locate encryption materials and enable security.
+Run the Talker/Listener 
+In another terminal, we launched the listener node.  To ensure the environment variables are properly set as described above.
+Testing and Validation
+By inspecting the packet contents with tools like tcpdump or Wireshark, you can confirm that the messages are encrypted.
