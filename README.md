@@ -7,6 +7,8 @@ Take a look at these tutorials to setup ardupilot, gazebo and the ardupilot gaze
 
 [Installing Gazebo and ArduPilot Plugin](https://github.com/AdilEddarif/AutonomousDeliveryDrone-SIMULATOR/blob/main/docs/installing_gazebo_arduplugin.md)
 
+[Installing ros and setting up environement](https://github.com/AdilEddarif/AutonomousDeliveryDrone-SIMULATOR/blob/main/docs/installing_ros_20_04.md)
+
 Installing x-term is recommended as it allows the ardupilot sitl interface to run in a terminal that will cleanly close when closing you sitl instance
 ```
 sudo apt install xterm
